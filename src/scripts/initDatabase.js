@@ -207,12 +207,12 @@ const insertSampleData = async () => {
 
     // 插入管理员账号
     const bcrypt = require('bcryptjs');
-    const adminPassword = await bcrypt.hash('y20051010', 10);
+    const adminPassword = await bcrypt.hash('admin123', 10);
 
     try {
       await database.query(`
         INSERT INTO users (phone, password, role, nickname, avatar) VALUES (?, ?, ?, ?, ?)
-      `, ['13773338396', adminPassword, 'admin', '管理员', '/uploads/avatars/default.svg']);
+      `, ['13700000000', adminPassword, 'admin', '管理员', '/uploads/avatars/default.svg']);
     } catch (error) {
       if (!error.message.includes('UNIQUE constraint failed')) {
         throw error;
@@ -225,10 +225,10 @@ const insertSampleData = async () => {
         INSERT INTO shop_info (name, description, phone, address, opening_hours, announcement, min_order_amount, delivery_fee)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?)
       `, [
-        '1in的小店',
+        '1inorder',
         '新鲜食材，用心烹饪',
         '400-888-8888',
-        '南京机电职业技术学院',
+        '南京xxxxx',
         '00:00-24:00',
         '欢迎光临！',
         15,

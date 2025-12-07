@@ -1,157 +1,42 @@
-# 日志
-logs
-*.log
-
-# 构建输出
-dist/
-# 生成的类型
-.astro/
-
-# 依赖
+# Dependencies
 node_modules/
+package-lock.json
+yarn.lock
 
-# 日志
+# Environment Variables (IMPORTANT: Never commit .env with sensitive data!)
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
 
+# Database
+*.sqlite
+*.db
+*.sqlite3
 
-# 环境变量
-.env
-.env.production
+# Uploads
+uploads/
+tmp/
 
-# macOS 特定文件
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
 
-# jetbrains 设置文件夹
-.idea/
-
-lerna-debug.log*
-.pnpm-debug.log*
-
-# 诊断报告 (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-
-# 运行时数据
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# jscoverage/JSCover 生成的插桩库目录
-lib-cov
-
-# istanbul 等工具使用的覆盖率目录
-coverage
-*.lcov
-
-# nyc 测试覆盖率
-.nyc_output
-
-# Grunt 中间存储 (https://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
-
-# Bower 依赖目录 (https://bower.io/)
-bower_components
-
-# node-waf 配置
-.lock-wscript
-
-# 编译的二进制插件 (https://nodejs.org/api/addons.html)
-build/Release
-
-# 依赖目录
-node_modules/
-jspm_packages/
-
-# Snowpack 依赖目录 (https://snowpack.dev/)
-web_modules/
-
-# TypeScript 缓存
-*.tsbuildinfo
-
-# 可选的 npm 缓存目录
-.npm
-
-# 可选的 eslint 缓存
-.eslintcache
-
-# 可选的 stylelint 缓存
-.stylelintcache
-
-# Microbundle 缓存
-.rpt2_cache/
-.rts2_cache_cjs/
-.rts2_cache_es/
-.rts2_cache_umd/
-
-# 可选的 REPL 历史
-.node_repl_history
-
-# 'npm pack' 的输出
+# Build outputs
+dist/
+build/
 *.tgz
 
-# Yarn 完整性文件
-.yarn-integrity
-
-# dotenv 环境变量文件
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
-
-# parcel-bundler 缓存 (https://parceljs.org/)
-.cache
-.parcel-cache
-
-# Next.js 构建输出
-.next
-out
-
-# Nuxt.js 构建/生成输出
-.nuxt
-dist
-
-# Gatsby 文件
-.cache/
-# 如果你的项目使用 Gatsby 而不是 Next.js，请取消注释 public 行
-# https://nextjs.org/blog/next-9-1#public-directory-support
-# public
-
-# vuepress 构建输出
-.vuepress/dist
-
-# vuepress v2.x 临时和缓存目录
-.temp
-.cache
-
-# Docusaurus 缓存和生成的文件
-.docusaurus
-
-# Serverless 目录
-.serverless/
-
-# FuseBox 缓存
-.fusebox/
-
-# DynamoDB Local 文件
-.dynamodb/
-
-# TernJS 端口文件
-.tern-port
-
-# 存储用于测试 VSCode 扩展的 VSCode 版本
-.vscode-test
-
-# yarn v2
-.yarn/cache
-.yarn/unplugged
-.yarn/build-state.yml
-.yarn/install-state.gz
-.pnp.*
-
-# i18next
-src/pages/en
-src/pages/ja
+# OS
+Thumbs.db
+.DS_Store

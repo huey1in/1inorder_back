@@ -64,9 +64,7 @@ app.use(cors({
       'http://localhost:3000',
       'http://localhost:5173',
       'http://127.0.0.1:8080',
-      'http://127.0.0.1:5173',
-      'https://order.yinxh.fun',
-      'https://admin.order.yinxh.fun'
+      'http://127.0.0.1:5173'
     ];
     
     // 允许所有 .yinxh.fun 的子域名
