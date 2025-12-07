@@ -1,6 +1,5 @@
 # 1inorder 后端服务
 
-![GitHub License](https://img.shields.io/github/license/huey1in/1inorder_back)
 ![GitHub Stars](https://img.shields.io/github/stars/huey1in/1inorder_back)
 ![GitHub Forks](https://img.shields.io/github/forks/huey1in/1inorder_back)
 ![Node.js](https://img.shields.io/badge/Node.js-16+-green)
